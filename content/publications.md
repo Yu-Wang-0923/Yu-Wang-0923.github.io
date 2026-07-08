@@ -117,24 +117,6 @@ layout: "single"
   </div>
 </div>
 
-<div class="flex gap-3">
-  <div class="flex-shrink-0 mt-0.5">
-    <svg class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-    </svg>
-  </div>
-  <div class="text-base leading-relaxed">
-    <span class="text-gray-800">Yuncheng Xu, Sanyang Liu, Xiaojun Sun, Hua Hu, <strong>Yu Wang</strong>. </span>
-    <a href="https://doi.org/10.1142/S1793524523500134" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-500 hover:underline">Asymptotic behavior of an SIQR epidemic model driven by Lévy jumps on scale-free networks.</a>
-    <span class="text-gray-700 italic"> International Journal of Biomathematics, 17(2), 2350013 (2024).</span>
-    <div class="mt-1.5">
-      <a href="/pdfs/siqr-levy-2024.pdf" target="_blank" class="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-medium rounded-full bg-blue-50 text-blue-600 hover:bg-blue-100 transition-colors">
-      <svg class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
-      PDF
-    </a>
-    </div>
-  </div>
-</div>
 
 <div class="flex gap-3">
   <div class="flex-shrink-0 mt-0.5">
@@ -167,6 +149,25 @@ layout: "single"
     <span class="text-gray-700 italic"> Filomat, 38(4), 1465-1477 (2024).</span>
     <div class="mt-1.5">
       <a href="/pdfs/q-coloured-coordination-2024.pdf" target="_blank" class="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-medium rounded-full bg-blue-50 text-blue-600 hover:bg-blue-100 transition-colors">
+      <svg class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
+      PDF
+    </a>
+    </div>
+  </div>
+</div>
+
+<div class="flex gap-3">
+  <div class="flex-shrink-0 mt-0.5">
+    <svg class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+    </svg>
+  </div>
+  <div class="text-base leading-relaxed">
+    <span class="text-gray-800">Yuncheng Xu, Sanyang Liu, Xiaojun Sun, Hua Hu, <strong>Yu Wang</strong>. </span>
+    <a href="https://doi.org/10.1142/S1793524523500134" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-500 hover:underline">Asymptotic behavior of an SIQR epidemic model driven by Lévy jumps on scale-free networks.</a>
+    <span class="text-gray-700 italic"> International Journal of Biomathematics, 17(2), 2350013 (2024).</span>
+    <div class="mt-1.5">
+      <a href="/pdfs/siqr-levy-2024.pdf" target="_blank" class="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-medium rounded-full bg-blue-50 text-blue-600 hover:bg-blue-100 transition-colors">
       <svg class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
       PDF
     </a>
