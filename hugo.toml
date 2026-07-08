@@ -29,6 +29,11 @@ pageRef = '/publications'
 weight = 15
 
 [[menus.main]]
+name = '荣誉奖项'
+pageRef = '/honors'
+weight = 17
+
+[[menus.main]]
 name = '文章'
 pageRef = '/posts'
 weight = 20
