@@ -41,7 +41,7 @@ url = '/activities/'
 weight = 18
 
 [[menus.main]]
-name = '文章'
+name = '博文'
 pageRef = '/posts'
 weight = 20
 
