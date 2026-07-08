@@ -7,6 +7,8 @@ layout: "single"
 
 <div class="space-y-6">
 
+<h2 class="text-2xl font-bold text-gray-800 mb-2">已发表</h2>
+
 <div class="flex gap-3">
   <div class="flex-shrink-0 mt-0.5">
     <svg class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
