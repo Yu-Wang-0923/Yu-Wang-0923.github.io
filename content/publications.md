@@ -5,96 +5,96 @@ draft: false
 layout: "single"
 ---
 
-<div class="space-y-8">
+<div class="space-y-6">
 
-<div class="flex gap-4">
-  <div class="flex-shrink-0 mt-1">
-    <svg class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+<div class="flex gap-3">
+  <div class="flex-shrink-0 mt-0.5">
+    <svg class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
       <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
     </svg>
   </div>
-  <div>
-    <p class="text-sm text-gray-600">Shuyuan Xu, <strong>Yu Wang</strong>, Shuang Wu, Yu Wang, Ang Dong, Stephen Shing-Toung Yau, Shing-Tung Yau, Rongling Wu.</p>
-    <p class="font-semibold"><a href="https://doi.org/10.1016/j.xinn.2026.101267" target="_blank" rel="noopener noreferrer" class="text-blue-700 hover:text-blue-500 hover:underline">Statistical learning of stochastic complex systems via the Yau-Yau nonlinear filter.</a></p>
-    <p class="text-sm text-gray-500 italic">The Innovation, 7(6), 101267 (2026).</p>
+  <div class="text-base leading-relaxed">
+    <span class="text-gray-600">Shuyuan Xu, <strong>Yu Wang</strong>, Shuang Wu, Yu Wang, Ang Dong, Stephen Shing-Toung Yau, Shing-Tung Yau, Rongling Wu. </span>
+    <a href="https://doi.org/10.1016/j.xinn.2026.101267" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-500 hover:underline">Statistical learning of stochastic complex systems via the Yau-Yau nonlinear filter.</a>
+    <span class="text-gray-500 italic"> The Innovation, 7(6), 101267 (2026).</span>
   </div>
 </div>
 
-<div class="flex gap-4">
-  <div class="flex-shrink-0 mt-1">
-    <svg class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+<div class="flex gap-3">
+  <div class="flex-shrink-0 mt-0.5">
+    <svg class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
       <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
     </svg>
   </div>
-  <div>
-    <p class="text-sm text-gray-600"><strong>Yu Wang</strong>, Shuyuan Xu, Xueda Wei, Xinrui Luo, Stephen Shing-Toung Yau, Shing-Tung Yau, Rongling Wu.</p>
-    <p class="font-semibold"><a href="https://dx.doi.org/10.4310/DAAT.250617012448" target="_blank" rel="noopener noreferrer" class="text-blue-700 hover:text-blue-500 hover:underline">Yau-YauAL: A computer tool for solving nonlinear filtering problems.</a></p>
-    <p class="text-sm text-gray-500 italic">Data Analytics and Topology, 1(1), 77-84 (2025).</p>
+  <div class="text-base leading-relaxed">
+    <span class="text-gray-600"><strong>Yu Wang</strong>, Shuyuan Xu, Xueda Wei, Xinrui Luo, Stephen Shing-Toung Yau, Shing-Tung Yau, Rongling Wu. </span>
+    <a href="https://dx.doi.org/10.4310/DAAT.250617012448" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-500 hover:underline">Yau-YauAL: A computer tool for solving nonlinear filtering problems.</a>
+    <span class="text-gray-500 italic"> Data Analytics and Topology, 1(1), 77-84 (2025).</span>
   </div>
 </div>
 
-<div class="flex gap-4">
-  <div class="flex-shrink-0 mt-1">
-    <svg class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+<div class="flex gap-3">
+  <div class="flex-shrink-0 mt-0.5">
+    <svg class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
       <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
     </svg>
   </div>
-  <div>
-    <p class="text-sm text-gray-600">Jincan Che, <strong>Yu Wang</strong>, Li Feng, Claudia Gragnoli, Christopher Griffin, Rongling Wu.</p>
-    <p class="font-semibold"><a href="https://doi.org/10.1016/j.plrev.2025.05.007" target="_blank" rel="noopener noreferrer" class="text-blue-700 hover:text-blue-500 hover:underline">High-order interaction modeling of tumor-microenvironment crosstalk for tumor growth.</a></p>
-    <p class="text-sm text-gray-500 italic">Physics of Life Reviews, 54, 11-23 (2025).</p>
+  <div class="text-base leading-relaxed">
+    <span class="text-gray-600">Jincan Che, <strong>Yu Wang</strong>, Li Feng, Claudia Gragnoli, Christopher Griffin, Rongling Wu. </span>
+    <a href="https://doi.org/10.1016/j.plrev.2025.05.007" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-500 hover:underline">High-order interaction modeling of tumor-microenvironment crosstalk for tumor growth.</a>
+    <span class="text-gray-500 italic"> Physics of Life Reviews, 54, 11-23 (2025).</span>
   </div>
 </div>
 
-<div class="flex gap-4">
-  <div class="flex-shrink-0 mt-1">
-    <svg class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+<div class="flex gap-3">
+  <div class="flex-shrink-0 mt-0.5">
+    <svg class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
       <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
     </svg>
   </div>
-  <div>
-    <p class="text-sm text-gray-600"><strong>Yu Wang</strong>, Huyile Liang, Lijie Wang, Jinyang Zhang.</p>
-    <p class="font-semibold"><a href="https://doi.org/10.1142/S179383092550017X" target="_blank" rel="noopener noreferrer" class="text-blue-700 hover:text-blue-500 hover:underline">Notes on the total positivity of the compression of double Riordan arrays.</a></p>
-    <p class="text-sm text-gray-500 italic">Discrete Mathematics Algorithms and Applications (2024).</p>
+  <div class="text-base leading-relaxed">
+    <span class="text-gray-600"><strong>Yu Wang</strong>, Huyile Liang, Lijie Wang, Jinyang Zhang. </span>
+    <a href="https://doi.org/10.1142/S179383092550017X" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-500 hover:underline">Notes on the total positivity of the compression of double Riordan arrays.</a>
+    <span class="text-gray-500 italic"> Discrete Mathematics Algorithms and Applications (2024).</span>
   </div>
 </div>
 
-<div class="flex gap-4">
-  <div class="flex-shrink-0 mt-1">
-    <svg class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+<div class="flex gap-3">
+  <div class="flex-shrink-0 mt-0.5">
+    <svg class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
       <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
     </svg>
   </div>
-  <div>
-    <p class="text-sm text-gray-600">Yuncheng Xu, Sanyang Liu, Xiaojun Sun, Hua Hu, <strong>Yu Wang</strong>.</p>
-    <p class="font-semibold"><a href="https://doi.org/10.1142/S1793524523500134" target="_blank" rel="noopener noreferrer" class="text-blue-700 hover:text-blue-500 hover:underline">Asymptotic behavior of an SIQR epidemic model driven by Lévy jumps on scale-free networks.</a></p>
-    <p class="text-sm text-gray-500 italic">International Journal of Biomathematics, 17(2), 2350013 (2024).</p>
+  <div class="text-base leading-relaxed">
+    <span class="text-gray-600">Yuncheng Xu, Sanyang Liu, Xiaojun Sun, Hua Hu, <strong>Yu Wang</strong>. </span>
+    <a href="https://doi.org/10.1142/S1793524523500134" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-500 hover:underline">Asymptotic behavior of an SIQR epidemic model driven by Lévy jumps on scale-free networks.</a>
+    <span class="text-gray-500 italic"> International Journal of Biomathematics, 17(2), 2350013 (2024).</span>
   </div>
 </div>
 
-<div class="flex gap-4">
-  <div class="flex-shrink-0 mt-1">
-    <svg class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+<div class="flex gap-3">
+  <div class="flex-shrink-0 mt-0.5">
+    <svg class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
       <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
     </svg>
   </div>
-  <div>
-    <p class="text-sm text-gray-600"><strong>Yu Wang</strong>, Jinyang Zhang, Huyile Liang.</p>
-    <p class="font-semibold"><a href="https://doi.org/10.1080/03081087.2024.2303732" target="_blank" rel="noopener noreferrer" class="text-blue-700 hover:text-blue-500 hover:underline">Some properties of combinatorial triangles related to Horadam polynomials.</a></p>
-    <p class="text-sm text-gray-500 italic">Linear & Multilinear Algebra, 72(17), 2967-2983 (2024).</p>
+  <div class="text-base leading-relaxed">
+    <span class="text-gray-600"><strong>Yu Wang</strong>, Jinyang Zhang, Huyile Liang. </span>
+    <a href="https://doi.org/10.1080/03081087.2024.2303732" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-500 hover:underline">Some properties of combinatorial triangles related to Horadam polynomials.</a>
+    <span class="text-gray-500 italic"> Linear & Multilinear Algebra, 72(17), 2967-2983 (2024).</span>
   </div>
 </div>
 
-<div class="flex gap-4">
-  <div class="flex-shrink-0 mt-1">
-    <svg class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+<div class="flex gap-3">
+  <div class="flex-shrink-0 mt-0.5">
+    <svg class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
       <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
     </svg>
   </div>
-  <div>
-    <p class="text-sm text-gray-600">Huyile Liang, Jinyang Zhang, <strong>Yu Wang</strong>.</p>
-    <p class="font-semibold"><a href="https://doi.org/10.2298/FIL2404465L" target="_blank" rel="noopener noreferrer" class="text-blue-700 hover:text-blue-500 hover:underline">Some properties of the matrix related to q-coloured coordination number.</a></p>
-    <p class="text-sm text-gray-500 italic">Filomat, 38(4), 1465-1477 (2024).</p>
+  <div class="text-base leading-relaxed">
+    <span class="text-gray-600">Huyile Liang, Jinyang Zhang, <strong>Yu Wang</strong>. </span>
+    <a href="https://doi.org/10.2298/FIL2404465L" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-500 hover:underline">Some properties of the matrix related to q-coloured coordination number.</a>
+    <span class="text-gray-500 italic"> Filomat, 38(4), 1465-1477 (2024).</span>
   </div>
 </div>
 
