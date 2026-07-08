@@ -1,6 +1,6 @@
 ---
 title: "C-TIPO: 一种使用 AI Agent 的提示词模板"
-date: 2026-07-08T16:30:00+08:00
+date: 2026-07-08T17:00:00+08:00
 draft: false
 tags:
   - AI

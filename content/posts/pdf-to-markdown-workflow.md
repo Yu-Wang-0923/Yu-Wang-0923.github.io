@@ -1,6 +1,6 @@
 ---
 title: "MinerU: 让AI爽看PDF"
-date: 2026-07-08
+date: 2026-07-08T18:00:00+08:00
 description: "PDF→Markdown/LaTeX，让AI看懂论文"
 tags: ["MinerU", "PDF", "Markdown", "LaTeX", "LLM", "工作流"]
 categories: ["工具"]
