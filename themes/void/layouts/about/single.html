@@ -3,7 +3,7 @@
     <!-- Title only, no meta/date/reading time/PV -->
     <div class="mb-12 text-center">
       {{ with site.Params.avatar.url }}
-      <div class="mx-auto w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden ring-2 ring-gray-200 dark:ring-slate-700 shadow-sm mb-4">
+      <div class="mx-auto w-24 md:w-28 aspect-square rounded-full overflow-hidden ring-2 ring-gray-200 dark:ring-slate-700 shadow-sm mb-4">
         <img src="{{ . }}" alt="{{ $.Site.Title }}" class="w-full h-full object-cover">
       </div>
       {{ end }}
