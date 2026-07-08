@@ -107,7 +107,7 @@ layout: "single"
   <div class="text-base leading-relaxed">
     <span class="text-gray-800"><strong>Yu Wang</strong>, Huyile Liang, Lijie Wang, Jinyang Zhang. </span>
     <a href="https://doi.org/10.1142/S179383092550017X" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-500 hover:underline">Notes on the total positivity of the compression of double Riordan arrays.</a>
-    <span class="text-gray-700 italic"> Discrete Mathematics Algorithms and Applications (2024).</span>
+    <span class="text-gray-700 italic"> Discrete Mathematics, Algorithms and Applications, 18(1), 2550017 (2026).</span>
     <div class="mt-1.5">
       <a href="/pdfs/riordan-arrays-2024.pdf" target="_blank" class="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-medium rounded-full bg-blue-50 text-blue-600 hover:bg-blue-100 transition-colors">
       <svg class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
