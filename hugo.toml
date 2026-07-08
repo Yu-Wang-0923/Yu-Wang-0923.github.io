@@ -24,6 +24,11 @@ pageRef = '/'
 weight = 10
 
 [[menus.main]]
+name = 'Publications'
+pageRef = '/publications'
+weight = 15
+
+[[menus.main]]
 name = '文章'
 pageRef = '/posts'
 weight = 20
@@ -32,11 +37,6 @@ weight = 20
 name = '标签'
 pageRef = '/tags'
 weight = 30
-
-[[menus.main]]
-name = 'Publications'
-pageRef = '/publications'
-weight = 35
 
 [[menus.main]]
 name = '关于'
