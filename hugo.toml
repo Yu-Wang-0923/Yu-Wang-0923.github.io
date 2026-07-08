@@ -24,7 +24,7 @@ pageRef = '/'
 weight = 10
 
 [[menus.main]]
-name = 'Publications'
+name = '出版物'
 pageRef = '/publications'
 weight = 15
 
