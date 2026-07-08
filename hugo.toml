@@ -13,9 +13,9 @@ theme = 'void'
   [params.social]
     github = "https://github.com/Yu-Wang-0923"
     twitter = "https://twitter.com/Yu_Wang_0923"
-    email = "yu.wang@example.com"
+    email = "yuwang2024@ruc.edu.cn"
   [params.avatar]
-    url = "https://www.gravatar.com/avatar/?d=mp"
+    url = "/avatar.jpg"
 
 # 主菜单
 [[menus.main]]

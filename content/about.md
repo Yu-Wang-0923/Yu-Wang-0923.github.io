@@ -12,4 +12,4 @@ layout: "about"
 ## 联系我
 
 - GitHub：https://github.com/Yu-Wang-0923
-- Email：yu.wang@example.com
+- Email：yuwang2024@ruc.edu.cn / yuwang@bimsa.cn
