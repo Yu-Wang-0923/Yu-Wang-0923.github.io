@@ -16,23 +16,11 @@ categories: ["工具"]
 
 ## 快速上手
 
-```bash
-pip install mineru-open-sdk
-```
+打开 [mineru.net](https://mineru.net)，上传 PDF，一键导出 Markdown 或 LaTeX。
 
-```python
-from mineru import MinerU
+公式自动转 LaTeX、表格变 Markdown、多栏按阅读顺序排列。AI 直接能读。
 
-# Flash Mode — 零配置，免费，单文件 ≤20 页
-client = MinerU()
-result = client.flash_extract("paper.pdf")
-with open("paper.md", "w", encoding="utf-8") as f:
-    f.write(result.markdown)
-```
-
-公式变 LaTeX、表格变 Markdown、多栏按阅读顺序排列。AI 直接能读。
-
-> 篇幅更长或精度要求更高 → 申请免费 token 用 Precision Mode（200MB/600页），输出 MD/DOCX/HTML/LaTeX/JSON。
+> 也支持 API / Python SDK / CLI / MCP Server，进阶用法按需选。
 
 ## 下游任务举例
 
