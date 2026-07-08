@@ -174,7 +174,7 @@ layout: "single"
   </div>
 </div>
 
-<h2 class="text-2xl font-bold text-gray-800 mb-2 mt-10">Under Review</h2>
+<h2 class="text-2xl font-bold text-gray-800 mb-2 mt-10">投稿中</h2>
 
 <div class="flex gap-3">
   <div class="flex-shrink-0 mt-0.5">
