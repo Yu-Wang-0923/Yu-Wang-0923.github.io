@@ -31,6 +31,7 @@ weight = 15
 [[menus.main]]
 name = '荣誉奖项'
 pageRef = '/honors'
+url = '/honors/'
 weight = 17
 
 [[menus.main]]

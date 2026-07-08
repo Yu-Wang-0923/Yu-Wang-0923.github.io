@@ -2,7 +2,6 @@
 title: "荣誉奖项"
 date: 2026-07-09T10:00:00+08:00
 draft: false
-layout: "single"
 ---
 
 <div class="space-y-4">
