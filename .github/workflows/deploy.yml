@@ -44,7 +44,7 @@ jobs:
           echo "$(npm root -g)/.bin" >> $GITHUB_PATH
 
       - name: Build
-        run: hugo --minify
+        run: hugo --minify --buildFuture
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
