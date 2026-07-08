@@ -36,10 +36,12 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
 
       - name: Install TailwindCSS CLI
-        run: npm install -g @tailwindcss/cli
+        run: |
+          npm install -g tailwindcss @tailwindcss/cli
+          echo "$(npm root -g)/.bin" >> $GITHUB_PATH
 
       - name: Build
         run: hugo --minify
