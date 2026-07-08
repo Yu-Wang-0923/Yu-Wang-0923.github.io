@@ -24,11 +24,22 @@ categories: ["工具"]
 - **上下文窗口大**：适合处理大型代码库
 - **速度尚可**：日常编码够用
 
-## Shift+Tab 选择文件
+## Shift+Tab 模式切换
 
-Claude Code 默认把整个工作目录作为上下文。但有时你只想针对特定文件分析。
+Claude Code 底部状态栏显示当前工作模式，按 **Shift+Tab** 循环切换：
 
-按 **Shift+Tab** 会弹出文件选择器，可以用方向键勾选（空格键）要包含的文件，然后回车，Claude Code 就只基于这些文件工作。
+| 模式 | 状态栏 | 说明 |
+|------|--------|------|
+| **Auto Mode** | `⏵⏵ auto mode on` | Claude 自主执行，不逐一询问 |
+| **Manual Mode** | `⏸ manual mode on` | 每次操作前询问确认 |
+| **Accept Edits** | `⏵⏵ accept edits on` | 自动接受文件修改 |
+| **Plan Mode** | `⏸ plan mode on` | 只规划不执行，适合先讨论方案 |
+
+用 Shift+Tab 在这些模式间循环，根据当前任务灵活切换。比如需要快速批量操作时用 Auto Mode，涉及重要修改时切 Manual Mode 逐条确认。
+
+### Shift+Tab 选择文件
+
+除了切换模式，Shift+Tab 还有一个功能：在对话中按 Shift+Tab 会弹出文件选择器，可以用方向键和空格键勾选要包含的文件，回车确认后 Claude Code 就只基于这些文件工作。
 
 对于 monorepo 或大项目特别有用——不用把全部代码塞进上下文，节省 token 也提升回答精度。
 
