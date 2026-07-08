@@ -35,6 +35,12 @@ url = '/honors/'
 weight = 17
 
 [[menus.main]]
+name = '学术活动'
+pageRef = '/activities'
+url = '/activities/'
+weight = 18
+
+[[menus.main]]
 name = '文章'
 pageRef = '/posts'
 weight = 20
