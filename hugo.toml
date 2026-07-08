@@ -1,0 +1,51 @@
+baseURL = 'https://Yu-Wang-0923.github.io/'
+locale = 'zh-CN'
+title = "Yu's Blog"
+theme = 'void'
+
+# TailwindCSS v4：生成 hugo_stats.json 供 @source 使用
+[build]
+  [build.buildStats]
+    enable = true
+
+# 社交链接
+[params]
+  [params.social]
+    github = "https://github.com/Yu-Wang-0923"
+    twitter = "https://twitter.com/Yu_Wang_0923"
+    email = "yu.wang@example.com"
+  [params.avatar]
+    url = "https://www.gravatar.com/avatar/?d=mp"
+
+# 主菜单
+[[menus.main]]
+name = '首页'
+pageRef = '/'
+weight = 10
+
+[[menus.main]]
+name = '文章'
+pageRef = '/posts'
+weight = 20
+
+[[menus.main]]
+name = '标签'
+pageRef = '/tags'
+weight = 30
+
+[[menus.main]]
+name = '关于'
+pageRef = '/about'
+weight = 40
+
+# 目录设置
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+    ordered = false
+
+  # 允许 Markdown 中嵌入 HTML（KaTeX 等需要）
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
