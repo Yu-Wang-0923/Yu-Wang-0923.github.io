@@ -23,10 +23,9 @@ jobs:
           fetch-depth: 0
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
-        with:
-          hugo-version: "0.140.2"
-          extended: true
+        run: |
+          curl -L -o hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.164.0/hugo_extended_0.164.0_linux-amd64.deb
+          sudo dpkg -i hugo.deb
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
