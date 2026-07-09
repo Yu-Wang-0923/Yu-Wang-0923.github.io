@@ -1,6 +1,6 @@
 ---
 title: "Metrics：传闻中的评估指标"
-date: 2026-07-09T20:00:00+08:00
+date: 2026-07-09T00:00:00+08:00
 description: "分类、回归、聚类常用评估指标速查手册"
 tags: ["Metrics", "机器学习", "评估指标", "sklearn", "AUC", "ROC"]
 categories: ["技术分享"]
