@@ -206,7 +206,7 @@ from sklearn.metrics import mean_absolute_error
 ### MAD — 中位数绝对偏差
 
 $$
-MAD = \text{median}( |y_{\text{true}} - y_{\text{pred}}| )
+MAD = \mathrm{median}( |y_i - \hat{y}_i| )
 $$
 
 - 常与 MAE 混用
@@ -215,7 +215,7 @@ $$
 ### MAPE — 平均绝对百分误差
 
 $$
-MAPE = \frac{100\%}{n} \sum \left| \frac{y_i - \hat{y}_i}{y_i} \right|
+MAPE = \frac{100\\%}{n} \sum \left| \frac{y_i - \hat{y}_i}{y_i} \right|
 $$
 
 - **优势**：无量纲百分比，支持跨量纲比较
