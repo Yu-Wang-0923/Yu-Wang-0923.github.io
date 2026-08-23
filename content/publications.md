@@ -16,6 +16,25 @@ layout: "single"
     </svg>
   </div>
   <div class="text-base leading-relaxed">
+    <span class="text-gray-800">Han Zhang, <strong>Yu Wang</strong>, Jiayi Zhao, Danchen Sun, Lei Zuo, Encan Kang, Jincan Che. </span>
+    <a href="https://doi.org/10.1016/j.jphotochem.2026.117635" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-500 hover:underline">Si–O–Zr bonded SiC@UiO-66-NH2 aerogel for enhanced photocatalytic degradation of tetracycline via interfacial charge regulation.</a>
+    <span class="text-gray-700 italic"> Journal of Photochemistry & Photobiology, A: Chemistry, 483, 117635 (2027).</span>
+    <div class="mt-1.5">
+      <a href="/pdfs/sic-uio-66-nh2-aerogel-2027.pdf" target="_blank" class="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-medium rounded-full bg-blue-50 text-blue-600 hover:bg-blue-100 transition-colors">
+        <svg class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
+        PDF
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="flex gap-3">
+  <div class="flex-shrink-0 mt-0.5">
+    <svg class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+    </svg>
+  </div>
+  <div class="text-base leading-relaxed">
     <span class="text-gray-800">Shuang Wu, Wenqi Pang, <strong>Yu Wang</strong>, Yihan Meng, Shing-Tung Yau, Rongling Wu. </span>
     <a href="https://doi.org/10.1016/j.drudis.2026.104733" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-500 hover:underline">IdopNetworks: How to infer the individualized genetic architecture of genomics for precision medicine.</a>
     <span class="text-gray-700 italic"> Drug Discovery Today, 104733 (2026).</span>
@@ -215,20 +234,6 @@ layout: "single"
     <span class="text-gray-800">Jiapeng Wang, <strong>Yu Wang</strong>, Xin Tang, Xinrui Luo, Huixian Yan, Wencheng An, Jiayi Li, Jiayu Xu, Rongling Wu. </span>
     <span class="font-semibold text-gray-800">Quasi-dynamic reconstruction of directed physiological networks from cross-sectional data using idopNetwork and path homology.</span>
     <span class="text-gray-700 italic"> Computers in Biology and Medicine. </span>
-    <span class="inline-flex items-center px-2.5 py-0.5 text-xs font-medium rounded-full bg-yellow-50 text-yellow-600 border border-yellow-200">Under Review</span>
-  </div>
-</div>
-
-<div class="flex gap-3">
-  <div class="flex-shrink-0 mt-0.5">
-    <svg class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-    </svg>
-  </div>
-  <div class="text-base leading-relaxed">
-    <span class="text-gray-800">Han Zhang, <strong>Yu Wang</strong>, Jiayi Zhao, Danchen Sun, Lei Zuo, Encan Kang, Jincan Che. </span>
-    <span class="font-semibold text-gray-800">Si–O–Zr Bonded SiC@UiO-66-NH2 Aerogel for Enhanced Photocatalytic Degradation of Tetracycline via Interfacial Charge Regulation.</span>
-    <span class="text-gray-700 italic"> Journal of Photochemistry & Photobiology, A: Chemistry. </span>
     <span class="inline-flex items-center px-2.5 py-0.5 text-xs font-medium rounded-full bg-yellow-50 text-yellow-600 border border-yellow-200">Under Review</span>
   </div>
 </div>
