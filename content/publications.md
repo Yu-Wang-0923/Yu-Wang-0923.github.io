@@ -220,7 +220,7 @@ layout: "single"
     <span class="text-gray-800"><strong>Yu Wang</strong>, Jiaze Guo, Lei Zuo, Shuang Wu, Wenqi Pan, Jincan Che. </span>
     <span class="font-semibold text-gray-800">An interpretable latent disease-axis framework for continuous disease scoring and treatment-response characterization.</span>
     <span class="text-gray-700 italic"> Statistics Innovation. </span>
-    <span class="inline-flex items-center px-2.5 py-0.5 text-xs font-medium rounded-full bg-yellow-50 text-yellow-600 border border-yellow-200">Under Review</span>
+    <span class="inline-flex items-center px-2.5 py-0.5 text-xs font-medium rounded-full bg-green-50 text-green-600 border border-green-200">Accepted</span>
   </div>
 </div>
 
