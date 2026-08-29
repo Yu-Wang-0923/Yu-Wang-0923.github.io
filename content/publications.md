@@ -259,7 +259,7 @@ layout: "single"
     </svg>
   </div>
   <div class="text-base leading-relaxed">
-    <span class="text-gray-800">Xueda Wei, <strong>Yu Wang</strong>, Yu Wang, Fei Long, Rongling Wu. </span>
+    <span class="text-gray-800">Xueda Wei, Yu Wang, <strong>Yu Wang</strong>, Fei Long, Rongling Wu. </span>
     <span class="font-semibold text-gray-800">Multiscale Topological Dynamics of Financial Networks under Industry Heterogeneity.</span>
     <span class="text-gray-700 italic"> Physica A: Statistical Mechanics and its Applications. </span>
     <span class="inline-flex items-center px-2.5 py-0.5 text-xs font-medium rounded-full bg-yellow-50 text-yellow-600 border border-yellow-200">With Editor</span>
