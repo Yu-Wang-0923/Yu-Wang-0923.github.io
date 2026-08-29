@@ -46,6 +46,10 @@ draft: false
           <div class="flex items-center gap-2 flex-wrap">
             <span class="font-semibold text-gray-900">2025年度若琳论文奖</span>
             <span class="inline-flex items-center px-2 py-0.5 text-xs font-medium rounded-full bg-yellow-100 text-yellow-700 border border-yellow-200">论文奖</span>
+            <a href="/pdfs/cert-2025-ruolin.jpg" target="_blank" class="inline-flex items-center gap-1 px-2 py-0.5 text-xs font-medium rounded-full bg-yellow-100 text-yellow-700 hover:bg-yellow-200 transition-colors flex-shrink-0">
+              <svg class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              证书
+            </a>
           </div>
         </div>
         <div class="text-sm text-gray-600 mt-1">王宇</div>
