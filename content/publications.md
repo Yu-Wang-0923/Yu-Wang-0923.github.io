@@ -234,7 +234,7 @@ layout: "single"
     <span class="text-gray-800">Jiapeng Wang, <strong>Yu Wang</strong>, Xin Tang, Xinrui Luo, Huixian Yan, Wencheng An, Jiayi Li, Jiayu Xu, Rongling Wu. </span>
     <span class="font-semibold text-gray-800">Quasi-dynamic reconstruction of directed physiological networks from cross-sectional data using idopNetwork and path homology.</span>
     <span class="text-gray-700 italic"> Computers in Biology and Medicine. </span>
-    <span class="inline-flex items-center px-2.5 py-0.5 text-xs font-medium rounded-full bg-yellow-50 text-yellow-600 border border-yellow-200">Under Review</span>
+    <span class="inline-flex items-center px-2.5 py-0.5 text-xs font-medium rounded-full bg-green-50 text-green-600 border border-green-200">Accepted</span>
   </div>
 </div>
 
