@@ -105,6 +105,44 @@ layout: "single"
     </svg>
   </div>
   <div class="text-base leading-relaxed">
+    <span class="text-gray-800">Jiapeng Wang, <strong>Yu Wang</strong>, Xin Tang, Xinrui Luo, Huixian Yan, Wencheng An, Jiayi Li, Jiayu Xu, Rongling Wu. </span>
+    <a href="https://doi.org/10.1016/j.compbiomed.2026.111910" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-500 hover:underline">Quasi-dynamic reconstruction of directed physiological networks from cross-sectional data using idopNetwork and path homology.</a>
+    <span class="text-gray-700 italic"> Computers in Biology and Medicine, 215, 111910 (2026).</span>
+    <div class="mt-1.5">
+      <a href="/pdfs/idopnetwork-path-homology-2026.pdf" target="_blank" class="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-medium rounded-full bg-blue-50 text-blue-600 hover:bg-blue-100 transition-colors">
+      <svg class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
+      PDF
+    </a>
+    </div>
+  </div>
+</div>
+
+<div class="flex gap-3">
+  <div class="flex-shrink-0 mt-0.5">
+    <svg class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+    </svg>
+  </div>
+  <div class="text-base leading-relaxed">
+    <span class="text-gray-800"><strong>Yu Wang</strong>, Jiaze Guo, Lei Zuo, Shuang Wu, Wenqi Pan, Jincan Che. </span>
+    <a href="https://doi.org/10.48130/stati-0026-0016" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-500 hover:underline">An interpretable latent disease-axis framework for continuous disease scoring and treatment-response characterization.</a>
+    <span class="text-gray-700 italic"> Statistics Innovation, 0016 (2026).</span>
+    <div class="mt-1.5">
+      <a href="/pdfs/latent-disease-axis-2026.pdf" target="_blank" class="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-medium rounded-full bg-blue-50 text-blue-600 hover:bg-blue-100 transition-colors">
+      <svg class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
+      PDF
+    </a>
+    </div>
+  </div>
+</div>
+
+<div class="flex gap-3">
+  <div class="flex-shrink-0 mt-0.5">
+    <svg class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+    </svg>
+  </div>
+  <div class="text-base leading-relaxed">
     <span class="text-gray-800"><strong>Yu Wang</strong>, Shuyuan Xu, Xueda Wei, Xinrui Luo, Stephen Shing-Toung Yau, Shing-Tung Yau, Rongling Wu. </span>
     <a href="https://dx.doi.org/10.4310/DAAT.250617012448" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 hover:text-blue-500 hover:underline">Yau-YauAL: A computer tool for solving nonlinear filtering problems.</a>
     <span class="text-gray-700 italic"> Data Analytics and Topology, 1(1), 77-84 (2025).</span>
@@ -210,33 +248,7 @@ layout: "single"
   </div>
 </div>
 
-<div class="flex gap-3">
-  <div class="flex-shrink-0 mt-0.5">
-    <svg class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-    </svg>
-  </div>
-  <div class="text-base leading-relaxed">
-    <span class="text-gray-800"><strong>Yu Wang</strong>, Jiaze Guo, Lei Zuo, Shuang Wu, Wenqi Pan, Jincan Che. </span>
-    <span class="font-semibold text-gray-800">An interpretable latent disease-axis framework for continuous disease scoring and treatment-response characterization.</span>
-    <span class="text-gray-700 italic"> Statistics Innovation. </span>
-    <span class="inline-flex items-center px-2.5 py-0.5 text-xs font-medium rounded-full bg-green-50 text-green-600 border border-green-200">Accepted</span>
-  </div>
-</div>
 
-<div class="flex gap-3">
-  <div class="flex-shrink-0 mt-0.5">
-    <svg class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-    </svg>
-  </div>
-  <div class="text-base leading-relaxed">
-    <span class="text-gray-800">Jiapeng Wang, <strong>Yu Wang</strong>, Xin Tang, Xinrui Luo, Huixian Yan, Wencheng An, Jiayi Li, Jiayu Xu, Rongling Wu. </span>
-    <span class="font-semibold text-gray-800">Quasi-dynamic reconstruction of directed physiological networks from cross-sectional data using idopNetwork and path homology.</span>
-    <span class="text-gray-700 italic"> Computers in Biology and Medicine. </span>
-    <span class="inline-flex items-center px-2.5 py-0.5 text-xs font-medium rounded-full bg-green-50 text-green-600 border border-green-200">Accepted</span>
-  </div>
-</div>
 
 <div class="flex gap-3">
   <div class="flex-shrink-0 mt-0.5">
