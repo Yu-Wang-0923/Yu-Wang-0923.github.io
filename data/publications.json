@@ -1,6 +1,16 @@
 {
   "published": [
     {
+      "type": "conference",
+      "year": "2026",
+      "authors": "Tianxiang Hao, <strong>Yu Wang</strong>, Chenxi Song, Kejun He, Ya Zhou, Haohuan Fu.",
+      "title": "AgenticECG: Autonomous Hypothesis-to-Factor Discovery Framework for ECG Classification.",
+      "venue": "IEEE-EMBS International Conference on Biomedical and Health Informatics (BHI), Hong Kong, Dec 12–15, 2026 (poster).",
+      "doi": "",
+      "pdf": "/pdfs/agenticecg-bhi-2026.pdf",
+      "status": "Accepted"
+    },
+    {
       "type": "journal",
       "year": "2027",
       "authors": "Han Zhang, <strong>Yu Wang</strong>, Jiayi Zhao, Danchen Sun, Lei Zuo, Encan Kang, Jincan Che.",

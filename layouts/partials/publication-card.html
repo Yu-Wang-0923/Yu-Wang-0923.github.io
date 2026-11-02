@@ -4,6 +4,7 @@
 {{- $isSubmitted := eq .kind "submitted" -}}
 {{- $venue := $e.venue | replaceRE `\s*\(\d{4}\)` "" -}}
 {{- $statusClass := dict
+      "Accepted" "pub-tag--accepted"
       "Submitted" "pub-tag--submitted"
       "Under Review" "pub-tag--review"
       "With Editor" "pub-tag--editor"

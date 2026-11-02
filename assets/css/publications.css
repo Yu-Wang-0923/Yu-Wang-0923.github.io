@@ -338,6 +338,12 @@
 }
 
 /* submission status */
+.pub-page .pub-tag--accepted {
+  color: #047857;
+  background: #ecfdf5;
+  border-color: #d1fae5;
+}
+
 .pub-page .pub-tag--submitted {
   color: #0369a1;
   background: #f0f9ff;
@@ -430,6 +436,12 @@
   color: #bfdbfe;
   background: #223049;
   border-color: #35496b;
+}
+
+.dark .pub-page .pub-tag--accepted {
+  color: #6ee7b7;
+  background: #10251f;
+  border-color: #1b3d33;
 }
 
 .dark .pub-page .pub-tag--submitted {
