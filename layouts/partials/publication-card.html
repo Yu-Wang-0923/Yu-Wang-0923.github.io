@@ -1,0 +1,36 @@
+{{/* Renders one publication entry.
+     Context: dict "entry" (map from data/publications.json) "kind" ("published" or "submitted"). */}}
+{{- $e := .entry -}}
+{{- $isSubmitted := eq .kind "submitted" -}}
+{{- $venue := $e.venue | replaceRE `\s*\(\d{4}\)` "" -}}
+{{- $statusClass := dict
+      "Submitted" "pub-tag--submitted"
+      "Under Review" "pub-tag--review"
+      "With Editor" "pub-tag--editor"
+      "Decision Made" "pub-tag--decision"
+      "Under Consideration" "pub-tag--consider" -}}
+
+<article class="pub-entry{{ if $isSubmitted }} pub-entry--submitted{{ end }}">
+  <h3 class="pub-entry__title">
+    {{- if $e.doi -}}
+      <a href="{{ $e.doi }}" target="_blank" rel="noopener noreferrer">{{ $e.title }}</a>
+    {{- else -}}
+      {{ $e.title }}
+    {{- end -}}
+  </h3>
+  <p class="pub-entry__authors">{{ $e.authors | safeHTML }}</p>
+  <div class="pub-entry__meta">
+    <span class="pub-entry__venue">{{ $venue }}</span>
+    {{- with $e.pdf }}
+    <a class="pub-tag pub-tag--pdf" href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="下载 PDF：{{ $e.title }}">
+      <svg class="pub-tag__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+      </svg>
+      PDF
+    </a>
+    {{- end }}
+    {{- with $e.status }}
+    <span class="pub-tag {{ index $statusClass . | default "pub-tag--consider" }}">{{ . }}</span>
+    {{- end }}
+  </div>
+</article>

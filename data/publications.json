@@ -1,0 +1,186 @@
+{
+  "published": [
+    {
+      "authors": "Han Zhang, <strong>Yu Wang</strong>, Jiayi Zhao, Danchen Sun, Lei Zuo, Encan Kang, Jincan Che.",
+      "title": "Si–O–Zr bonded SiC@UiO-66-NH2 aerogel for enhanced photocatalytic degradation of tetracycline via interfacial charge regulation.",
+      "venue": "Journal of Photochemistry & Photobiology, A: Chemistry, 483, 117635 (2027).",
+      "year": "2027",
+      "doi": "https://doi.org/10.1016/j.jphotochem.2026.117635",
+      "pdf": "/pdfs/sic-uio-66-nh2-aerogel-2027.pdf",
+      "status": ""
+    },
+    {
+      "authors": "Huizhen Li, Jiayi Li, Ang Dong, Xiaoyan Guo, Qiuyue Tu, Zelin Feng, Haojia Lin, Yanru Zhang, Yuxuan Hao, Huiying Gong, Yihan Meng, <strong>Yu Wang</strong>, Shing-Tung Yau, Xiaocang Cao, Rongling Wu, Xinjuan Liu.",
+      "title": "Omnidirectional interaction networks modulating phenotypic plasticity in the gut microbiota towards ulcerative colitis.",
+      "venue": "Advanced Science, e78043 (2026).",
+      "year": "2026",
+      "doi": "https://doi.org/10.1002/advs.78043",
+      "pdf": "/pdfs/ulcerative-colitis-microbiota-2026.pdf",
+      "status": ""
+    },
+    {
+      "authors": "Jiapeng Wang, <strong>Yu Wang</strong>, Xin Tang, Xinrui Luo, Huixian Yan, Wencheng An, Jiayi Li, Jiayu Xu, Rongling Wu.",
+      "title": "Quasi-dynamic reconstruction of directed physiological networks from cross-sectional data using idopNetwork and path homology.",
+      "venue": "Computers in Biology and Medicine, 215, 111910 (2026).",
+      "year": "2026",
+      "doi": "https://doi.org/10.1016/j.compbiomed.2026.111910",
+      "pdf": "/pdfs/idopnetwork-path-homology-2026.pdf",
+      "status": ""
+    },
+    {
+      "authors": "<strong>Yu Wang</strong>, Jiaze Guo, Lei Zuo, Shuang Wu, Wenqi Pan, Jincan Che.",
+      "title": "An interpretable latent disease-axis framework for continuous disease scoring and treatment-response characterization.",
+      "venue": "Statistics Innovation, 0016 (2026).",
+      "year": "2026",
+      "doi": "https://doi.org/10.48130/stati-0026-0016",
+      "pdf": "/pdfs/latent-disease-axis-2026.pdf",
+      "status": ""
+    },
+    {
+      "authors": "Shuang Wu, Wenqi Pang, <strong>Yu Wang</strong>, Yihan Meng, Shing-Tung Yau, Rongling Wu.",
+      "title": "IdopNetworks: How to infer the individualized genetic architecture of genomics for precision medicine.",
+      "venue": "Drug Discovery Today, 104733 (2026).",
+      "year": "2026",
+      "doi": "https://doi.org/10.1016/j.drudis.2026.104733",
+      "pdf": "",
+      "status": ""
+    },
+    {
+      "authors": "Lidan Sun, Yangyang Bian, Dengcheng Yang, Runtian Miao, Yihan Meng, Jincan Che, Ziwei Li, Zimo Li, Haoning Wang, Shuang Wu, Juan Meng, <strong>Yu Wang</strong>, Christopher Griffin, Shing-Tung Yau, Rongling Wu.",
+      "title": "Graph statistics theory of individualized quantitative genetics under haplotype-resolved genome assembly.",
+      "venue": "Proceedings of the National Academy of Sciences, 123(14), e2600004123 (2026).",
+      "year": "2026",
+      "doi": "https://doi.org/10.1073/pnas.2600004123",
+      "pdf": "/pdfs/genome-graph-statistics-2026.pdf",
+      "status": ""
+    },
+    {
+      "authors": "Shuyuan Xu, <strong>Yu Wang</strong>, Shuang Wu, Yu Wang, Ang Dong, Stephen Shing-Toung Yau, Shing-Tung Yau, Rongling Wu.",
+      "title": "Statistical learning of stochastic complex systems via the Yau-Yau nonlinear filter.",
+      "venue": "The Innovation, 7(6), 101267 (2026).",
+      "year": "2026",
+      "doi": "https://doi.org/10.1016/j.xinn.2026.101267",
+      "pdf": "/pdfs/yau-yau-nonlinear-filter-2026.pdf",
+      "status": ""
+    },
+    {
+      "authors": "<strong>Yu Wang</strong>, Huyile Liang, Lijie Wang, Jinyang Zhang.",
+      "title": "Notes on the total positivity of the compression of double Riordan arrays.",
+      "venue": "Discrete Mathematics, Algorithms and Applications, 18(1), 2550017 (2026).",
+      "year": "2026",
+      "doi": "https://doi.org/10.1142/S179383092550017X",
+      "pdf": "/pdfs/riordan-arrays-2024.pdf",
+      "status": ""
+    },
+    {
+      "authors": "<strong>Yu Wang</strong>, Shuyuan Xu, Xueda Wei, Xinrui Luo, Stephen Shing-Toung Yau, Shing-Tung Yau, Rongling Wu.",
+      "title": "Yau-YauAL: A computer tool for solving nonlinear filtering problems.",
+      "venue": "Data Analytics and Topology, 1(1), 77-84 (2025).",
+      "year": "2025",
+      "doi": "https://dx.doi.org/10.4310/DAAT.250617012448",
+      "pdf": "/pdfs/yau-yau-al-2025.pdf",
+      "status": ""
+    },
+    {
+      "authors": "Jincan Che, <strong>Yu Wang</strong>, Li Feng, Claudia Gragnoli, Christopher Griffin, Rongling Wu.",
+      "title": "High-order interaction modeling of tumor-microenvironment crosstalk for tumor growth.",
+      "venue": "Physics of Life Reviews, 54, 11-23 (2025).",
+      "year": "2025",
+      "doi": "https://doi.org/10.1016/j.plrev.2025.05.007",
+      "pdf": "/pdfs/tumor-microenvironment-2025.pdf",
+      "status": ""
+    },
+    {
+      "authors": "<strong>Yu Wang</strong>, Jinyang Zhang, Huyile Liang.",
+      "title": "Some properties of combinatorial triangles related to Horadam polynomials.",
+      "venue": "Linear & Multilinear Algebra, 72(17), 2967-2983 (2024).",
+      "year": "2024",
+      "doi": "https://doi.org/10.1080/03081087.2024.2303732",
+      "pdf": "/pdfs/horadam-polynomials-2024.pdf",
+      "status": ""
+    },
+    {
+      "authors": "Huyile Liang, Jinyang Zhang, <strong>Yu Wang</strong>.",
+      "title": "Some properties of the matrix related to q-coloured coordination number.",
+      "venue": "Filomat, 38(4), 1465-1477 (2024).",
+      "year": "2024",
+      "doi": "https://doi.org/10.2298/FIL2404465L",
+      "pdf": "/pdfs/q-coloured-coordination-2024.pdf",
+      "status": ""
+    },
+    {
+      "authors": "Yuncheng Xu, Sanyang Liu, Xiaojun Sun, Hua Hu, <strong>Yu Wang</strong>.",
+      "title": "Asymptotic behavior of an SIQR epidemic model driven by Lévy jumps on scale-free networks.",
+      "venue": "International Journal of Biomathematics, 17(2), 2350013 (2024).",
+      "year": "2024",
+      "doi": "https://doi.org/10.1142/S1793524523500134",
+      "pdf": "/pdfs/siqr-levy-2024.pdf",
+      "status": ""
+    }
+  ],
+  "submitted": [
+    {
+      "authors": "Shuliang Bai, Qinying Wang, Yao Chen, Kenren Xu, <strong>Yu Wang</strong>, Shing-Tung Yau, Rongling Wu.",
+      "title": "An Ollivier–Ricci curvature framework reveals localized remodeling of the RIF1–UBE2N network neighborhood in mismatch repair-deficient colorectal cancer.",
+      "venue": "npj Precision Oncology.",
+      "year": "",
+      "doi": "",
+      "pdf": "",
+      "status": "Submitted"
+    },
+    {
+      "authors": "Junjie Cai, Bo Chen, Honglin Wang, <strong>Yu Wang</strong>, Chongyou Rao, Hebin Che, Xiazhen Qin, Chunguang Mu, Kunlun He.",
+      "title": "Ranking Remaining Time to First Myocardial Infarct Annotation from ECG–Report Pairs by Deep Survival Analysis.",
+      "venue": "IEEE Journal of Biomedical and Health Informatics.",
+      "year": "",
+      "doi": "",
+      "pdf": "",
+      "status": "Submitted"
+    },
+    {
+      "authors": "Shuaijie Zhang, <strong>Yu Wang</strong>, Yihan Meng, Rongling Wu.",
+      "title": "Systemic protein-network dependencies predict chronic kidney disease.",
+      "venue": "NETSCIX2027, submission #169.",
+      "year": "",
+      "doi": "",
+      "pdf": "",
+      "status": "Submitted"
+    },
+    {
+      "authors": "Jiaze Guo, <strong>Yu Wang</strong>, Xinrui Luo, Xin Tang, Huixian Yan, Wencheng An, Jiayu Xu, Jiayi Li, Jincan Che.",
+      "title": "Metabolic-Inflammatory Subtyping and Network Regulatory Characteristics of Hyperuricemia in Young Adults.",
+      "venue": "Statistics Innovation.",
+      "year": "",
+      "doi": "",
+      "pdf": "",
+      "status": "Under Review"
+    },
+    {
+      "authors": "Xueda Wei, Yu Wang, <strong>Yu Wang</strong>, Fei Long, Rongling Wu.",
+      "title": "Multiscale Topological Dynamics of Financial Networks under Industry Heterogeneity.",
+      "venue": "Physica A: Statistical Mechanics and its Applications.",
+      "year": "",
+      "doi": "",
+      "pdf": "",
+      "status": "With Editor"
+    },
+    {
+      "authors": "Jianan Yin, Guangbo Kang, Dengcheng Yang, <strong>Yu Wang</strong>, Huiying Gong, Xinjuan Liu, Xiaocang Cao, He Huang, Shing-Tung Yau, Jincan Che.",
+      "title": "An emergent pathogenic microbial consortium drives inflammatory bowel disease.",
+      "venue": "Communications Medicine.",
+      "year": "",
+      "doi": "",
+      "pdf": "",
+      "status": "Decision Made"
+    },
+    {
+      "authors": "Huiying Gong, Liyong Fu, Yihan Meng, Dongbo Xie, <strong>Yu Wang</strong>, Hao Bai, Meixia Ye, Shikui Dong, Feng Pan, Shing-Tung Yau.",
+      "title": "Topological integrity of 3D soil interaction networks stabilizes large-scale ecosystem multifunctionality.",
+      "venue": "Communications Earth & Environment.",
+      "year": "",
+      "doi": "",
+      "pdf": "",
+      "status": "Under Consideration"
+    }
+  ]
+}

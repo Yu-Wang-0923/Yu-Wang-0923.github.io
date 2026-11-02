@@ -1,0 +1,59 @@
+{{/* Publications listing.
+     Data: data/publications.json ({ "published": [...], "submitted": [...] }).
+     Styles: assets/css/publications.css, inlined once per page. */}}
+{{- $data := hugo.Data.publications -}}
+{{- with resources.Get "css/publications.css" -}}
+<style>{{ .Content | safeCSS }}</style>
+{{- end -}}
+
+<div class="pub-page">
+  <div class="pub-stats">
+    <a class="pub-stats__item" href="#published">
+      <span class="pub-stats__num">{{ len $data.published }}</span>
+      <span class="pub-stats__label">已发表论文</span>
+    </a>
+    <a class="pub-stats__item" href="#submitted">
+      <span class="pub-stats__num">{{ len $data.submitted }}</span>
+      <span class="pub-stats__label">在投论文</span>
+    </a>
+  </div>
+
+  <section class="pub-section" id="published">
+    <div class="pub-section__head">
+      <h2 class="pub-section__title">已发表</h2>
+      <span class="pub-section__count">{{ len $data.published }} 篇</span>
+    </div>
+
+    {{- $years := slice -}}
+    {{- range $data.published -}}
+      {{- with .year }}{{ $years = $years | append . }}{{ end -}}
+    {{- end -}}
+
+    {{- range uniq $years }}
+    {{- $year := . }}
+    {{- $items := where $data.published "year" $year -}}
+    <div class="pub-year">
+      <span class="pub-year__label">{{ $year }}</span>
+      <span class="pub-year__rule"></span>
+      <span class="pub-year__count">{{ len $items }} 篇</span>
+    </div>
+    <div class="pub-list">
+      {{- range $items }}
+      {{ partial "publication-card.html" (dict "entry" . "kind" "published") }}
+      {{- end }}
+    </div>
+    {{- end }}
+  </section>
+
+  <section class="pub-section" id="submitted">
+    <div class="pub-section__head">
+      <h2 class="pub-section__title">投稿中</h2>
+      <span class="pub-section__count">{{ len $data.submitted }} 篇</span>
+    </div>
+    <div class="pub-list">
+      {{- range $data.submitted }}
+      {{ partial "publication-card.html" (dict "entry" . "kind" "submitted") }}
+      {{- end }}
+    </div>
+  </section>
+</div>

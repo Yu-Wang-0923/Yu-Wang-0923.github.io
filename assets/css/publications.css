@@ -1,0 +1,411 @@
+/* ==========================================================================
+   Publications page
+   Scoped styles for /publications/. Rendered by layouts/shortcodes/publications.html.
+   Kept out of the theme so theme updates stay mergeable.
+   ========================================================================== */
+
+.pub-page {
+  --pub-ink: #111827;
+  --pub-ink-soft: #374151;
+  --pub-muted: #6b7280;
+  --pub-faint: #9ca3af;
+  --pub-line: #edf0f4;
+  --pub-line-strong: #e2e6ec;
+  --pub-card: #ffffff;
+  --pub-card-subtle: #fcfcfd;
+  --pub-accent: #2563eb;
+  --pub-accent-line: #d7e5ff;
+  --pub-shadow: 0 6px 18px rgba(15, 23, 42, 0.055);
+  color: var(--pub-ink-soft);
+}
+
+/* ---------- summary chips ---------- */
+.pub-page .pub-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+  margin: 0 0 2.25rem;
+  padding: 0;
+  list-style: none;
+}
+
+.pub-page .pub-stats__item {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  padding: 0.55rem 0.9rem;
+  border: 1px solid var(--pub-line);
+  border-radius: 0.75rem;
+  background: var(--pub-card);
+  text-decoration: none;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.pub-page .pub-stats__item:hover {
+  border-color: var(--pub-accent-line);
+  box-shadow: 0 2px 10px rgba(37, 99, 235, 0.07);
+}
+
+.pub-page .pub-stats__num {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--pub-ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.pub-page .pub-stats__label {
+  font-size: 0.8125rem;
+  color: var(--pub-muted);
+  text-decoration: none;
+}
+
+/* ---------- section ---------- */
+.pub-page .pub-section {
+  margin-top: 2.5rem;
+}
+
+.pub-page .pub-section:first-of-type {
+  margin-top: 0;
+}
+
+.pub-page .pub-section__head {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0 0 1.35rem;
+  padding: 0 0 0.6rem;
+  border-bottom: 1px solid var(--pub-line-strong);
+}
+
+.pub-page h2.pub-section__title {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--pub-ink);
+}
+
+.pub-page .pub-section__count {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  background: #f3f4f6;
+  color: var(--pub-muted);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- year groups ---------- */
+.pub-page .pub-year {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1.75rem 0 0.85rem;
+}
+
+.pub-page .pub-year:first-child {
+  margin-top: 0.25rem;
+}
+
+.pub-page .pub-year__label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--pub-faint);
+  font-variant-numeric: tabular-nums;
+}
+
+.pub-page .pub-year__rule {
+  flex: 1 1 auto;
+  height: 1px;
+  background: var(--pub-line);
+}
+
+.pub-page .pub-year__count {
+  font-size: 0.6875rem;
+  color: var(--pub-faint);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- entries ---------- */
+.pub-page .pub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin: 0;
+  padding: 0;
+}
+
+.pub-page .pub-entry {
+  position: relative;
+  margin: 0;
+  padding: 1rem 1.1rem 1.05rem 1.25rem;
+  border: 1px solid var(--pub-line);
+  border-radius: 0.8rem;
+  background: var(--pub-card);
+  transition: border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+}
+
+.pub-page .pub-entry::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.95rem;
+  bottom: 0.95rem;
+  width: 2px;
+  border-radius: 0 2px 2px 0;
+  background: #dbeafe;
+  transition: background 0.18s ease;
+}
+
+.pub-page .pub-entry:hover {
+  border-color: var(--pub-accent-line);
+  box-shadow: var(--pub-shadow);
+  transform: translateY(-1px);
+}
+
+.pub-page .pub-entry:hover::before {
+  background: var(--pub-accent);
+}
+
+.pub-page .pub-entry--submitted {
+  background: var(--pub-card-subtle);
+}
+
+.pub-page .pub-entry--submitted::before {
+  background: #e5e7eb;
+}
+
+.pub-page .pub-entry--submitted:hover::before {
+  background: var(--pub-accent);
+}
+
+/* ---------- entry contents ---------- */
+.pub-page .pub-entry__title {
+  margin: 0;
+  font-size: 0.9688rem;
+  font-weight: 600;
+  line-height: 1.55;
+  color: var(--pub-ink);
+}
+
+.pub-page .pub-entry__title a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.pub-page .pub-entry__title a:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: #bfdbfe;
+}
+
+.pub-page .pub-entry__authors {
+  margin: 0.4rem 0 0;
+  font-size: 0.8125rem;
+  line-height: 1.62;
+  color: var(--pub-muted);
+}
+
+.pub-page .pub-entry__authors strong {
+  color: var(--pub-ink);
+  font-weight: 650;
+}
+
+.pub-page .pub-entry__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.55rem;
+  margin: 0.55rem 0 0;
+}
+
+.pub-page .pub-entry__venue {
+  font-size: 0.8125rem;
+  font-style: italic;
+  line-height: 1.5;
+  color: #4b5563;
+}
+
+/* ---------- tags ---------- */
+.pub-page .pub-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.15rem 0.55rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1.5;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.pub-page a.pub-tag {
+  text-decoration: none;
+}
+
+.pub-page .pub-tag__icon {
+  width: 0.7rem;
+  height: 0.7rem;
+  flex-shrink: 0;
+}
+
+/* keyboard focus */
+.pub-page .pub-stats__item:focus-visible,
+.pub-page .pub-entry__title a:focus-visible,
+.pub-page a.pub-tag:focus-visible {
+  outline: 2px solid var(--pub-accent);
+  outline-offset: 2px;
+  border-radius: 0.375rem;
+}
+
+/* PDF */
+.pub-page .pub-tag--pdf {
+  color: #1d4ed8;
+  background: #eff6ff;
+  border-color: #dbeafe;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.pub-page .pub-tag--pdf:hover {
+  color: #1e40af;
+  background: #dbeafe;
+  border-color: #bfdbfe;
+}
+
+/* submission status */
+.pub-page .pub-tag--submitted {
+  color: #0369a1;
+  background: #f0f9ff;
+  border-color: #e0f2fe;
+}
+
+.pub-page .pub-tag--review {
+  color: #b45309;
+  background: #fffbeb;
+  border-color: #fef3c7;
+}
+
+.pub-page .pub-tag--editor {
+  color: #6d28d9;
+  background: #f5f3ff;
+  border-color: #ede9fe;
+}
+
+.pub-page .pub-tag--decision {
+  color: #0f766e;
+  background: #f0fdfa;
+  border-color: #ccfbf1;
+}
+
+.pub-page .pub-tag--consider {
+  color: #475569;
+  background: #f8fafc;
+  border-color: #e2e8f0;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width: 640px) {
+  .pub-page .pub-entry {
+    padding: 0.9rem 0.95rem 0.95rem 1.05rem;
+  }
+
+  .pub-page .pub-entry__title {
+    font-size: 0.9375rem;
+  }
+}
+
+/* ---------- reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .pub-page .pub-entry,
+  .pub-page .pub-entry::before,
+  .pub-page .pub-tag--pdf,
+  .pub-page .pub-stats__item {
+    transition: none;
+  }
+
+  .pub-page .pub-entry:hover {
+    transform: none;
+  }
+}
+
+/* ---------- dark mode ---------- */
+.dark .pub-page {
+  --pub-ink: #f1f3f7;
+  --pub-ink-soft: #cbd2dc;
+  --pub-muted: #96a0b0;
+  --pub-faint: #6b7686;
+  --pub-line: #262c37;
+  --pub-line-strong: #333a47;
+  --pub-card: #171a21;
+  --pub-card-subtle: #14171d;
+  --pub-accent-line: #2d4368;
+  --pub-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+.dark .pub-page .pub-section__count {
+  background: #232936;
+  color: #b9c2d0;
+}
+
+.dark .pub-page .pub-entry::before {
+  background: #2b3d5c;
+}
+
+.dark .pub-page .pub-entry__venue {
+  color: #a8b2c1;
+}
+
+.dark .pub-page .pub-tag--pdf {
+  color: #93c5fd;
+  background: #1b2433;
+  border-color: #2a3a55;
+}
+
+.dark .pub-page .pub-tag--pdf:hover {
+  color: #bfdbfe;
+  background: #223049;
+  border-color: #35496b;
+}
+
+.dark .pub-page .pub-tag--submitted {
+  color: #7dd3fc;
+  background: #14232e;
+  border-color: #1d3746;
+}
+
+.dark .pub-page .pub-tag--review {
+  color: #fcd34d;
+  background: #2a2313;
+  border-color: #3d3419;
+}
+
+.dark .pub-page .pub-tag--editor {
+  color: #c4b5fd;
+  background: #221e33;
+  border-color: #322b4a;
+}
+
+.dark .pub-page .pub-tag--decision {
+  color: #5eead4;
+  background: #122824;
+  border-color: #1b3d37;
+}
+
+.dark .pub-page .pub-tag--consider {
+  color: #cbd5e1;
+  background: #1c212a;
+  border-color: #2a3140;
+}
