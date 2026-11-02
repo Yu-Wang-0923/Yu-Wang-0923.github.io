@@ -1,8 +1,8 @@
 /* ==========================================================================
-   Publications listing — citation list (DBLP / ACL Anthology style)
+   Publications listing — tabbed citation list (DBLP / ACL Anthology style)
    Scoped to .pub-page; markup from layouts/shortcodes/publications.html.
-   Serif = the work (citation text), UI sans = scaffolding (counts, links, tags).
-   Structure: section -> type group -> year rail -> citation paragraphs.
+   Tabs: Alpine sets one attribute (data-tab); CSS does the showing/hiding,
+   so a no-JS reader still gets both panels in the document.
    ========================================================================== */
 
 .pub-page {
@@ -22,7 +22,6 @@
   --pub-quiet: #6b7280;
   --pub-line: #e6eaf0;
   --pub-line-strong: #d8dee8;
-  --pub-card-hover: #f7f9fc;
   --pub-accent: #2563eb;
   --pub-accent-line: #c9dbf8;
 
@@ -38,88 +37,95 @@
   color: #0f172a;
 }
 
-/* ---------- top summary ---------- */
-.pub-page .pub-stats {
+/* ---------- tab bar ---------- */
+.pub-page .pub-tabs {
   display: flex;
   align-items: baseline;
-  gap: var(--s3);
+  gap: 1.75rem;
   margin: 0 0 var(--s5);
-}
-
-.pub-page .pub-stat {
-  display: inline-flex;
-  align-items: baseline;
-  gap: var(--s2);
-  color: inherit;
-  text-decoration: none;
-}
-
-.pub-page .pub-stat__num {
-  font-family: var(--font-ui);
-  font-size: 1.125rem;
-  font-weight: 600;
-  line-height: 1;
-  color: var(--pub-ink);
-  font-variant-numeric: tabular-nums;
-  letter-spacing: -0.01em;
-}
-
-.pub-page .pub-stat__label {
-  font-family: var(--font-ui);
-  font-size: 0.8125rem;
-  color: var(--pub-quiet);
-}
-
-.pub-page .pub-stat:hover .pub-stat__label {
-  color: var(--pub-accent);
-}
-
-.pub-page .pub-stats__divider {
-  width: 1px;
-  height: 0.9rem;
-  background: var(--pub-line-strong);
-  transform: translateY(0.1rem);
-}
-
-/* ---------- section ---------- */
-.pub-page .pub-section {
-  margin-top: var(--s6);
-}
-
-.pub-page .pub-section:first-of-type {
-  margin-top: 0;
-}
-
-.pub-page .pub-section__head {
-  display: flex;
-  align-items: baseline;
-  gap: var(--s3);
-  margin: 0 0 var(--s4);
-  padding: 0 0 0.625rem;
+  padding: 0;
   border-bottom: 1px solid var(--pub-line-strong);
 }
 
-.pub-page h2.pub-section__title {
-  margin: 0;
-  padding: 0;
+.pub-page .pub-tab {
+  position: relative;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  margin: 0 0 -1px;
+  padding: 0 0 0.6rem;
   border: 0;
+  background: none;
   font-family: inherit;
-  font-size: 1.1875rem;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
-  color: var(--pub-ink);
-  text-wrap: balance;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--pub-quiet);
+  cursor: pointer;
+  transition: color 0.15s ease;
 }
 
-.pub-page .pub-section__count {
+.pub-page .pub-tab:hover {
+  color: var(--pub-ink);
+}
+
+.pub-page .pub-tab__count {
   font-family: var(--font-ui);
-  font-size: 0.8125rem;
-  font-weight: 500;
+  font-size: 0.75rem;
+  font-weight: 600;
   color: var(--pub-quiet);
   font-variant-numeric: tabular-nums;
 }
 
+.pub-page .pub-tab:focus-visible {
+  outline: 2px solid var(--pub-accent);
+  outline-offset: 2px;
+  border-radius: 0.25rem;
+}
+
+/* hidden radios drive the tabs */
+.pub-page .pub-tabinput {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.pub-page .pub-panel {
+  display: none;
+}
+
+#pubtab-published:checked ~ .pub-panel--published,
+#pubtab-submitted:checked ~ .pub-panel--submitted {
+  display: block;
+}
+
+#pubtab-published:checked ~ .pub-tabs .pub-tab--published,
+#pubtab-submitted:checked ~ .pub-tabs .pub-tab--submitted {
+  color: var(--pub-ink);
+}
+
+#pubtab-published:checked ~ .pub-tabs .pub-tab--published::after,
+#pubtab-submitted:checked ~ .pub-tabs .pub-tab--submitted::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: var(--pub-accent);
+}
+
+#pubtab-published:focus-visible ~ .pub-tabs .pub-tab--published,
+#pubtab-submitted:focus-visible ~ .pub-tabs .pub-tab--submitted {
+  outline: 2px solid var(--pub-accent);
+  outline-offset: 3px;
+  border-radius: 0.25rem;
+}
 /* ---------- type group ---------- */
 .pub-page .pub-sub {
   margin-top: var(--s5);
@@ -296,8 +302,8 @@
 .pub-page .pub-cite__action--status.is-consider {
   color: #475569;
 }
+
 /* keyboard focus */
-.pub-page .pub-stat:focus-visible,
 .pub-page a.pub-cite__title:focus-visible,
 .pub-page a.pub-cite__action:focus-visible {
   outline: 2px solid var(--pub-accent);
@@ -309,6 +315,14 @@
 @media (max-width: 640px) {
   .pub-page {
     --pub-hang: 1rem;
+  }
+
+  .pub-page .pub-tabs {
+    gap: 1.25rem;
+  }
+
+  .pub-page .pub-tab {
+    font-size: 0.9375rem;
   }
 
   .pub-page .pub-group {
@@ -353,7 +367,6 @@
   --pub-quiet: #8f99a8;
   --pub-line: #2d3441;
   --pub-line-strong: #3a4351;
-  --pub-card-hover: #1b1f27;
   --pub-accent-line: #3d5a86;
 }
 
