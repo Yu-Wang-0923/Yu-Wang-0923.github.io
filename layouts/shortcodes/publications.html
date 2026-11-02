@@ -1,7 +1,7 @@
 {{/* Publications listing.
      Data: data/publications.json ({"published": [...], "submitted": [...]}).
-     Entries carry `type` = journal | conference; they are grouped by type, then by year.
-     Entries without a year (e.g. papers under submission) render in a plain list.
+     Entries carry `type` = journal | conference; grouped by type, then by year.
+     Entries without a year (papers under submission) render in a flat group.
      Styles: assets/css/publications.css, inlined once per page. */}}
 {{- $data := hugo.Data.publications -}}
 {{- with resources.Get "css/publications.css" -}}
@@ -18,20 +18,21 @@
 
 <div class="pub-page">
   <div class="pub-stats">
-    <a class="pub-stats__item" href="#published">
-      <span class="pub-stats__num">{{ len $data.published }}</span>
-      <span class="pub-stats__label">已发表论文</span>
+    <a class="pub-stat" href="#published">
+      <span class="pub-stat__num">{{ len $data.published }}</span>
+      <span class="pub-stat__label">已发表论文</span>
     </a>
-    <a class="pub-stats__item" href="#submitted">
-      <span class="pub-stats__num">{{ len $data.submitted }}</span>
-      <span class="pub-stats__label">在投论文</span>
+    <span class="pub-stats__divider" aria-hidden="true"></span>
+    <a class="pub-stat" href="#submitted">
+      <span class="pub-stat__num">{{ len $data.submitted }}</span>
+      <span class="pub-stat__label">在投论文</span>
     </a>
   </div>
 
   {{- range $sections }}
   {{- $items := .items -}}
   {{- $cardKind := .cardKind -}}
-  {{- /* show journal/conference sub-headings only when the section really has both */ -}}
+  {{- /* show journal/conference headings only when the section really has both */ -}}
   {{- $present := slice -}}
   {{- range $kinds -}}
     {{- if where $items "type" . -}}{{ $present = $present | append . }}{{- end -}}
@@ -41,7 +42,7 @@
   <section class="pub-section" id="{{ .id }}">
     <div class="pub-section__head">
       <h2 class="pub-section__title">{{ .title }}</h2>
-      <span class="pub-section__count">{{ len $items }} 篇</span>
+      <span class="pub-section__count">{{ len $items }}</span>
     </div>
 
     {{- range $present }}
@@ -53,7 +54,7 @@
       <div class="pub-sub__head">
         <span class="pub-sub__label">{{ $label.zh }}</span>
         <span class="pub-sub__en">{{ $label.en }}</span>
-        <span class="pub-sub__count">{{ len $group }} 篇</span>
+        <span class="pub-sub__count">{{ len $group }}</span>
       </div>
       {{- end }}
       {{- $years := slice -}}
@@ -65,23 +66,24 @@
       {{- range uniq $years }}
       {{- $year := . }}
       {{- $yearItems := where $group "year" $year }}
-      <div class="pub-year">
-        <span class="pub-year__label">{{ $year }}</span>
-        <span class="pub-year__rule"></span>
-        <span class="pub-year__count">{{ len $yearItems }} 篇</span>
-      </div>
-      <div class="pub-list">
-        {{- range $yearItems }}
-        {{ partial "publication-card.html" (dict "entry" . "kind" $cardKind) }}
-        {{- end }}
+      <div class="pub-group">
+        <div class="pub-group__year">{{ $year }}</div>
+        <div class="pub-group__items">
+          {{- range $yearItems }}
+          {{ partial "publication-card.html" (dict "entry" . "kind" $cardKind) }}
+          {{- end }}
+        </div>
       </div>
       {{- end }}
 
       {{- with $rest }}
-      <div class="pub-list">
-        {{- range . }}
-        {{ partial "publication-card.html" (dict "entry" . "kind" $cardKind) }}
-        {{- end }}
+      <div class="pub-group">
+        <div class="pub-group__year" aria-hidden="true"></div>
+        <div class="pub-group__items">
+          {{- range . }}
+          {{ partial "publication-card.html" (dict "entry" . "kind" $cardKind) }}
+          {{- end }}
+        </div>
       </div>
       {{- end }}
     </div>
