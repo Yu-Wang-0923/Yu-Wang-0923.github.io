@@ -101,6 +101,58 @@
   font-variant-numeric: tabular-nums;
 }
 
+/* ---------- journal / conference sub-sections ---------- */
+.pub-page .pub-sub {
+  margin-top: 1.9rem;
+}
+
+.pub-page .pub-sub:first-of-type {
+  margin-top: 0.4rem;
+}
+
+.pub-page .pub-sub__head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin: 0 0 0.2rem;
+}
+
+.pub-page .pub-sub__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--pub-ink);
+}
+
+.pub-page .pub-sub__label::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--pub-accent);
+  opacity: 0.7;
+}
+
+.pub-page .pub-sub__en {
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  color: var(--pub-muted);
+}
+
+.pub-page .pub-sub__count {
+  margin-left: auto;
+  font-size: 0.6875rem;
+  color: var(--pub-faint);
+  font-variant-numeric: tabular-nums;
+}
+
+.pub-page .pub-sub .pub-year:first-of-type {
+  margin-top: 0.75rem;
+}
+
 /* ---------- year groups ---------- */
 .pub-page .pub-year {
   display: flex;

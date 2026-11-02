@@ -1,10 +1,20 @@
 {{/* Publications listing.
-     Data: data/publications.json ({ "published": [...], "submitted": [...] }).
+     Data: data/publications.json ({"published": [...], "submitted": [...]}).
+     Entries carry `type` = journal | conference; they are grouped by type, then by year.
+     Entries without a year (e.g. papers under submission) render in a plain list.
      Styles: assets/css/publications.css, inlined once per page. */}}
 {{- $data := hugo.Data.publications -}}
 {{- with resources.Get "css/publications.css" -}}
 <style>{{ .Content | safeCSS }}</style>
 {{- end -}}
+
+{{- $kinds := slice "journal" "conference" -}}
+{{- $labels := dict
+      "journal" (dict "zh" "期刊论文" "en" "Journal Articles")
+      "conference" (dict "zh" "会议论文" "en" "Conference Proceedings") -}}
+{{- $sections := slice
+      (dict "id" "published" "title" "已发表" "items" $data.published "cardKind" "published")
+      (dict "id" "submitted" "title" "投稿中" "items" $data.submitted "cardKind" "submitted") -}}
 
 <div class="pub-page">
   <div class="pub-stats">
@@ -18,42 +28,64 @@
     </a>
   </div>
 
-  <section class="pub-section" id="published">
+  {{- range $sections }}
+  {{- $items := .items -}}
+  {{- $cardKind := .cardKind -}}
+  {{- /* show journal/conference sub-headings only when the section really has both */ -}}
+  {{- $present := slice -}}
+  {{- range $kinds -}}
+    {{- if where $items "type" . -}}{{ $present = $present | append . }}{{- end -}}
+  {{- end -}}
+  {{- $showHeads := gt (len $present) 1 }}
+
+  <section class="pub-section" id="{{ .id }}">
     <div class="pub-section__head">
-      <h2 class="pub-section__title">已发表</h2>
-      <span class="pub-section__count">{{ len $data.published }} 篇</span>
+      <h2 class="pub-section__title">{{ .title }}</h2>
+      <span class="pub-section__count">{{ len $items }} 篇</span>
     </div>
 
-    {{- $years := slice -}}
-    {{- range $data.published -}}
-      {{- with .year }}{{ $years = $years | append . }}{{ end -}}
-    {{- end -}}
+    {{- range $present }}
+    {{- $kind := . }}
+    {{- $group := where $items "type" $kind }}
+    {{- $label := index $labels $kind }}
+    <div class="pub-sub">
+      {{- if $showHeads }}
+      <div class="pub-sub__head">
+        <span class="pub-sub__label">{{ $label.zh }}</span>
+        <span class="pub-sub__en">{{ $label.en }}</span>
+        <span class="pub-sub__count">{{ len $group }} 篇</span>
+      </div>
+      {{- end }}
+      {{- $years := slice -}}
+      {{- $rest := slice -}}
+      {{- range $group -}}
+        {{- if .year }}{{ $years = $years | append .year }}{{ else }}{{ $rest = $rest | append . }}{{ end -}}
+      {{- end -}}
 
-    {{- range uniq $years }}
-    {{- $year := . }}
-    {{- $items := where $data.published "year" $year -}}
-    <div class="pub-year">
-      <span class="pub-year__label">{{ $year }}</span>
-      <span class="pub-year__rule"></span>
-      <span class="pub-year__count">{{ len $items }} 篇</span>
-    </div>
-    <div class="pub-list">
-      {{- range $items }}
-      {{ partial "publication-card.html" (dict "entry" . "kind" "published") }}
+      {{- range uniq $years }}
+      {{- $year := . }}
+      {{- $yearItems := where $group "year" $year }}
+      <div class="pub-year">
+        <span class="pub-year__label">{{ $year }}</span>
+        <span class="pub-year__rule"></span>
+        <span class="pub-year__count">{{ len $yearItems }} 篇</span>
+      </div>
+      <div class="pub-list">
+        {{- range $yearItems }}
+        {{ partial "publication-card.html" (dict "entry" . "kind" $cardKind) }}
+        {{- end }}
+      </div>
+      {{- end }}
+
+      {{- with $rest }}
+      <div class="pub-list">
+        {{- range . }}
+        {{ partial "publication-card.html" (dict "entry" . "kind" $cardKind) }}
+        {{- end }}
+      </div>
       {{- end }}
     </div>
     {{- end }}
   </section>
-
-  <section class="pub-section" id="submitted">
-    <div class="pub-section__head">
-      <h2 class="pub-section__title">投稿中</h2>
-      <span class="pub-section__count">{{ len $data.submitted }} 篇</span>
-    </div>
-    <div class="pub-list">
-      {{- range $data.submitted }}
-      {{ partial "publication-card.html" (dict "entry" . "kind" "submitted") }}
-      {{- end }}
-    </div>
-  </section>
+  {{- end }}
 </div>
