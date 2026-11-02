@@ -212,13 +212,13 @@
 
 .pub-page .pub-cite__title {
   font-weight: 600;
-  color: var(--pub-ink);
+  color: #1d4ed8;
   text-decoration: none;
   transition: color 0.15s ease;
 }
 
 .pub-page a.pub-cite__title:hover {
-  color: #1d4ed8;
+  color: #1e40af;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
@@ -238,7 +238,7 @@
   font-size: 0.75rem;
   font-weight: 600;
   line-height: inherit;
-  color: #1d4ed8;
+  color: #475569;
   text-decoration: none;
   white-space: nowrap;
   /* the citation's hanging indent must not reach inside the marker */
@@ -256,7 +256,7 @@
 }
 
 .pub-page a.pub-cite__action:hover {
-  color: #1e40af;
+  color: #1d4ed8;
   text-decoration: underline;
   text-underline-offset: 2px;
 }
@@ -366,16 +366,20 @@
   color: #a8b2c1;
 }
 
-.dark .pub-page a.pub-cite__action {
+.dark .pub-page .pub-cite__title {
   color: #93c5fd;
+}
+
+.dark .pub-page a.pub-cite__action {
+  color: #a8b2c1;
 }
 
 .dark .pub-page a.pub-cite__action:hover {
-  color: #bfdbfe;
+  color: #93c5fd;
 }
 
 .dark .pub-page a.pub-cite__title:hover {
-  color: #93c5fd;
+  color: #bfdbfe;
   text-decoration-color: #3d5a86;
 }
 
