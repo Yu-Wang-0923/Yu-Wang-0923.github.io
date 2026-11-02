@@ -99,33 +99,8 @@
   display: none;
 }
 
-#pubtab-published:checked ~ .pub-panel--published,
-#pubtab-submitted:checked ~ .pub-panel--submitted {
-  display: block;
-}
-
-#pubtab-published:checked ~ .pub-tabs .pub-tab--published,
-#pubtab-submitted:checked ~ .pub-tabs .pub-tab--submitted {
-  color: var(--pub-ink);
-}
-
-#pubtab-published:checked ~ .pub-tabs .pub-tab--published::after,
-#pubtab-submitted:checked ~ .pub-tabs .pub-tab--submitted::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 2px;
-  background: var(--pub-accent);
-}
-
-#pubtab-published:focus-visible ~ .pub-tabs .pub-tab--published,
-#pubtab-submitted:focus-visible ~ .pub-tabs .pub-tab--submitted {
-  outline: 2px solid var(--pub-accent);
-  outline-offset: 3px;
-  border-radius: 0.25rem;
-}
+/* Tab state rules are generated per page by layouts/partials/tab-rules.html,
+   so this file only carries the appearance and the base hide. */
 /* ---------- type group ---------- */
 .pub-page .pub-sub {
   margin-top: var(--s5);
@@ -418,4 +393,10 @@
 
 .dark .pub-page .pub-cite__action--status.is-consider {
   color: #b6c0ce;
+}
+
+/* ---------- honours page: Chinese runs need a little air between fields ---------- */
+.hon-page .pub-cite__venue,
+.hon-page .pub-cite__authors {
+  margin-left: 0.25em;
 }

@@ -1,0 +1,32 @@
+{{/* One honour rendered as a citation-style paragraph, sharing the
+     citation-list component used by the publications page.
+     Context: dict "entry" (map from data/honors.json).
+     Spaces between the fields are literal on purpose: Go template trimming
+     would otherwise glue Chinese words together. */}}
+{{- $e := .entry -}}
+{{- $level := $e.level -}}
+{{- $tier := "is-consider" -}}
+{{- if $level -}}
+  {{- if or (in $level "特等") (in $level "一等奖") (in $level "国际一等") -}}
+    {{- $tier = "is-review" -}}
+  {{- else if in $level "奖学金" -}}
+    {{- $tier = "is-accepted" -}}
+  {{- else if in $level "论文奖" -}}
+    {{- $tier = "is-decision" -}}
+  {{- else if in $level "二等奖" -}}
+    {{- $tier = "is-editor" -}}
+  {{- end -}}
+{{- end -}}
+
+<p class="pub-cite">
+  {{- if $e.cert -}}
+  <a class="pub-cite__title" href="{{ $e.cert }}" target="_blank" rel="noopener noreferrer">{{ $e.title }}</a>
+  {{- else -}}
+  <span class="pub-cite__title">{{ $e.title }}</span>
+  {{- end -}}
+  {{ with $e.issuer }} <span class="pub-cite__venue">{{ . }}</span>{{ end }}
+  {{ with $e.recipients }}{{ if ne . "王宇" }} <span class="pub-cite__authors">{{ . }}</span>{{ end }}{{ end }}
+  {{ with $e.advisor }} <span class="pub-cite__authors">{{ . }}</span>{{ end }}
+  {{ with $level }} <span class="pub-cite__action pub-cite__action--status {{ $tier }}">{{ . }}</span>{{ end }}
+  {{ with $e.cert }} <a class="pub-cite__action" href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="证书：{{ $e.title }}"><svg class="pub-cite__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>证书</a>{{ end }}
+</p>

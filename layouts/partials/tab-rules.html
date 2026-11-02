@@ -1,0 +1,19 @@
+{{/* Emits the :checked rules for a CSS-only tab group.
+     Context: dict "name" (radio name prefix) "ids" (slice of tab ids).
+     Required markup contract:
+       <input class="pub-tabinput" id="<name>-<id>" name="<name>">
+       ...
+       <div class="pub-tabs"><label class="pub-tab pub-tab--<id>" for="<name>-<id>">
+       <section class="pub-panel pub-panel--<id>">                                        */}}
+{{- $name := .name -}}
+{{- $ids := .ids -}}
+<style>
+{{- range $ids }}
+#{{ $name }}-{{ . }}:checked ~ .pub-panel--{{ . }} { display: block; }
+{{- end }}
+{{- range $ids }}
+#{{ $name }}-{{ . }}:checked ~ .pub-tabs .pub-tab--{{ . }} { color: var(--pub-ink); }
+#{{ $name }}-{{ . }}:checked ~ .pub-tabs .pub-tab--{{ . }}::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; background: var(--pub-accent); }
+#{{ $name }}-{{ . }}:focus-visible ~ .pub-tabs .pub-tab--{{ . }} { outline: 2px solid var(--pub-accent); outline-offset: 3px; border-radius: 0.25rem; }
+{{- end }}
+</style>

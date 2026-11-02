@@ -5,11 +5,12 @@
      Tabs are CSS-only: hidden radio inputs + labels, no JavaScript required.
      A four-line helper at the end only honours a deep link (#submitted);
      without JS the first tab stays selected.
-     Styles: assets/css/publications.css, inlined once per page. */}}
+     Styles: assets/css/citation.css, inlined once per page. */}}
 {{- $data := hugo.Data.publications -}}
-{{- with resources.Get "css/publications.css" -}}
+{{- with resources.Get "css/citation.css" -}}
 <style>{{ .Content | safeCSS }}</style>
 {{- end -}}
+{{- partial "tab-rules.html" (dict "name" "pub-tabs" "ids" (slice "published" "submitted")) -}}
 
 {{- $kinds := slice "journal" "conference" -}}
 {{- $labels := dict
@@ -21,12 +22,12 @@
 
 <div class="pub-page">
   {{- range $sections }}
-  <input class="pub-tabinput" type="radio" name="pub-tabs" id="pubtab-{{ .id }}"{{ if eq .id "published" }} checked{{ end }}>
+  <input class="pub-tabinput" type="radio" name="pub-tabs" id="pub-tabs-{{ .id }}"{{ if eq .id "published" }} checked{{ end }}>
   {{- end }}
 
   <div class="pub-tabs">
     {{- range $sections }}
-    <label class="pub-tab pub-tab--{{ .id }}" for="pubtab-{{ .id }}">{{ .title }}<span class="pub-tab__count">{{ len .items }}</span></label>
+    <label class="pub-tab pub-tab--{{ .id }}" for="pub-tabs-{{ .id }}">{{ .title }}<span class="pub-tab__count">{{ len .items }}</span></label>
     {{- end }}
   </div>
 
@@ -89,7 +90,7 @@
 
   <script>
     (function () {
-      var map = { '#submitted': 'pubtab-submitted', '#panel-submitted': 'pubtab-submitted' };
+      var map = { '#submitted': 'pub-tabs-submitted', '#panel-submitted': 'pub-tabs-submitted' };
       var id = map[window.location.hash];
       if (id) { var el = document.getElementById(id); if (el) { el.checked = true; } }
     })();
