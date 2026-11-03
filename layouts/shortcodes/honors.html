@@ -1,51 +1,29 @@
-{{/* Honours listing, tabbed by award category.
+{{/* Honours listing.
      Data: data/honors.json ([{category, year, title, level, issuer, recipients, advisor, cert}]).
-     Reuses the citation-list component (assets/css/citation.css) so this page's
-     typography, tabs, year rail and bracketed markers match /publications/.
-     Tabs are CSS-only: hidden radios + labels, no JavaScript required. */}}
+     One continuous list grouped by year — no tabs — using the same citation-list
+     component as /publications/ (assets/css/citation.css).
+     `category` stays in the data but is not rendered; add tabs back if needed. */}}
 {{- $items := hugo.Data.honors -}}
 {{- with resources.Get "css/citation.css" -}}
 <style>{{ .Content | safeCSS }}</style>
 {{- end -}}
-{{- partial "tab-rules.html" (dict "name" "hon-tabs" "ids" (slice "thesis" "competition" "scholarship")) -}}
 
-{{- $cats := slice
-      (dict "id" "thesis" "title" "论文奖")
-      (dict "id" "competition" "title" "竞赛")
-      (dict "id" "scholarship" "title" "奖学金") -}}
+{{- $years := slice -}}
+{{- range $items -}}
+  {{- with .year }}{{ $years = $years | append . }}{{ end -}}
+{{- end -}}
 
 <div class="pub-page hon-page">
-  {{- range $i, $c := $cats }}
-  <input class="pub-tabinput" type="radio" name="hon-tabs" id="hon-tabs-{{ $c.id }}"{{ if eq $i 0 }} checked{{ end }}>
-  {{- end }}
-
-  <div class="pub-tabs">
-    {{- range $i, $c := $cats }}
-    {{- $count := where $items "category" $c.id }}
-    <label class="pub-tab pub-tab--{{ $c.id }}" for="hon-tabs-{{ $c.id }}">{{ $c.title }}<span class="pub-tab__count">{{ len $count }}</span></label>
-    {{- end }}
-  </div>
-
-  {{- range $i, $c := $cats }}
-  {{- $group := where $items "category" $c.id }}
-  <section class="pub-panel pub-panel--{{ $c.id }}" id="panel-{{ $c.id }}">
-    {{- $years := slice -}}
-    {{- range $group -}}
-      {{- with .year }}{{ $years = $years | append . }}{{ end -}}
-    {{- end -}}
-
-    {{- range uniq $years }}
-    {{- $year := . }}
-    {{- $yearItems := where $group "year" $year }}
-    <div class="pub-group">
-      <div class="pub-group__year">{{ $year }}</div>
-      <div class="pub-group__items">
-        {{- range $yearItems }}
-        {{ partial "honors-entry.html" (dict "entry" .) }}
-        {{- end }}
-      </div>
+  {{- range uniq $years }}
+  {{- $year := . }}
+  {{- $yearItems := where $items "year" $year }}
+  <div class="pub-group">
+    <div class="pub-group__year">{{ $year }}</div>
+    <div class="pub-group__items">
+      {{- range $yearItems }}
+      {{ partial "honors-entry.html" (dict "entry" .) }}
+      {{- end }}
     </div>
-    {{- end }}
-  </section>
+  </div>
   {{- end }}
 </div>
